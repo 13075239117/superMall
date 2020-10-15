@@ -20,9 +20,10 @@ export class detailGoods{
 	}
 }
 export class detailShoppromotions{
-	constructor(promotions1,detailInfo1) {
+	constructor(promotions1,detailInfo1,detailrate1) {
 	    this.promotions = promotions1
 		this.detailInfo = detailInfo1
+		this.detailrate = detailrate1
 	}
 }
 // export class detailGoods {

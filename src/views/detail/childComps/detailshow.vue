@@ -21,7 +21,7 @@
 
 <style scoped>
 	.showtheworld{
-		margin-bottom: 150px;
+		padding-bottom: 50px;
 		border-bottom: 1px solid red;
 	}
 	.showtheworld img{

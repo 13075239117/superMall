@@ -17,10 +17,10 @@
 		height: 43px;
 		bottom: 60px;
 		right: 20px;
+		z-index: 999;
 		
 	}
 	.topback img{
 		width: 100%;
-		z-index:999;
 	}
 </style>

@@ -7,7 +7,7 @@
 				<div 
 				v-for="(item,index) in titles" 
 				id="titleItem" 
-				:class="{titleItem:cuurrentindex==index}" 
+				:class="{titleItem:currentindex==index}" 
 				@click="selected(index)">
 				{{item}}
 				</div>				
@@ -29,7 +29,7 @@
 		},
 		data(){
 			return{
-				cuurrentindex:0
+				currentindex:0
 			}
 		},
 		components:{
@@ -38,7 +38,7 @@
 		methods:{
 			selected(index){
 				// console.log(index)
-				this.cuurrentindex=index
+				this.currentindex=index
 			},
 			backTo(){
 				this.$router.back()

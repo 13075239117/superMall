@@ -22,7 +22,7 @@
 			<RecommendView :recommend='recommend'></RecommendView>
 			<FeatureView></FeatureView>
 			<tapControl :titles='title' class='tapControl' @tapClick='getIndex' ref='tapControl1'></tapControl>
-			<GoodList :goodList="showGoods"></GoodList>
+			<GoodList :goodList="showGoods" ></GoodList>
 		</BScroll>
 		<topback v-show="topback" @click.native='backTop'></topback>
 	</div>
@@ -219,8 +219,7 @@
 		/* background-color: red; */
 		/* height: 250px; */
 		/* height: 400px; */
-		/* overflow: hidden; */
-
+		/* overflow: hidden; */ 		
 		overflow: hidden;
 		position: absolute;
 		top: 44px;
