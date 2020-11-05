@@ -1,7 +1,7 @@
 <template>
 	<div class="showtheworld">
 		<div><span>{{pictureshow[0].key}}</span></div>
-		<div v-for="(item,index) in pictureshow[0].list"><img :src="item" alt=""></div>
+		<div v-for="(item,index) in pictureshow[0].list"><img :src="item" alt="" @load="imgload"></div>
 	</div>
 </template>
 
@@ -16,6 +16,11 @@
 				}
 			},
 		},
+		methods:{
+			imgload(){
+				this.$bus.$emit('imgsfinish')
+			}
+		}
 	}
 </script>
 

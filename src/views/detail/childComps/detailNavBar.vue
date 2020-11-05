@@ -12,7 +12,7 @@
 				{{item}}
 				</div>				
 			</div>
-		</NavBar>	
+		</NavBar>
 </template>
 
 <script>
@@ -39,6 +39,7 @@
 			selected(index){
 				// console.log(index)
 				this.currentindex=index
+				this.$emit('fuckingPosition',this.currentindex)
 			},
 			backTo(){
 				this.$router.back()

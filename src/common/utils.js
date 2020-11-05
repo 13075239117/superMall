@@ -31,7 +31,7 @@ export function formatDate(date,fmt){
 		
 	}
 	function padLeftZero(b){
-		console.log(b.length)
+		// console.log(b.length)
 		return ('00'+b).substr(b.length)
 	}
 	return fmt
